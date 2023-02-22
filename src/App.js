@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import PlayerDisplay from "./components/PlayerDisplay";
+import GameInterface from "./components/GameInterface";
+import "./styles/App.scss";
 
 function App() {
+  const [playerList, setplayerList] = useState([]);
+
+  const handlePlyareList = (playerList) => {
+    setplayerList(playerList);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PlayerDisplay
+              playerList={playerList}
+              handlePlayerList={handlePlyareList}
+            />
+          }
+        />
+        <Route path="/game" element={<GameInterface playerList={playerList}/>} />
+      </Routes>
     </div>
   );
 }

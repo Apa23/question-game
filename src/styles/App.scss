@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;600&display=swap');
+
+$primary-color: rgb(12, 0, 39);
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Shantell Sans', cursive;
+}
+
+body, html{
+  background-color: $primary-color;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

@@ -1,0 +1,139 @@
+$primary-color: rgb(232, 232, 250);
+$secondary-color: rgb(32, 0, 107);
+$third-color: rgb(241, 223, 252);
+
+.player-display {
+  background-color: $primary-color;
+  height: 700px;
+  width: 400px;
+  border-radius: 25px;
+  border: 3px solid $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.display-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+  color: $secondary-color;
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+  font-size: 2.5rem !important;
+}
+
+.display-header a,
+.display-header a:active,
+.display-header a:target,
+.display-header a:focus,
+.display-header a:focus-visible {
+  border-radius: 25px;
+  color: $secondary-color !important;
+  border: solid 1px $secondary-color !important;
+  background-color: $primary-color !important;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+}
+
+.display-header a:hover {
+  color: $primary-color !important;
+  border: solid 1px $secondary-color !important;
+  background-color: $secondary-color !important;
+  font-weight: 600;
+}
+
+.player-list {
+  overflow: auto;
+  width: 100%;
+  padding: 0 1rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: $secondary-color;
+  margin: 2rem 0 ;
+
+}
+
+li .player-layer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+li .player-layer p {
+  margin: 0;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+
+li .player-layer button,
+li .player-layer button:focus,
+li .player-layer button:target,
+li .player-layer button:focus-visible,
+li .player-layer button:active {
+  color: $secondary-color !important;
+  border-radius: 25px;
+  border: solid 1px $secondary-color !important;
+  background-color: $primary-color !important;
+  font-weight: 600;
+}
+
+li .player-layer button:hover {
+  background-color: $secondary-color !important;
+  border-radius: 25px;
+  border: solid 1px $secondary-color !important;
+  color: $primary-color !important;
+}
+
+.player-input{
+  width: 100%;
+}
+
+.player-input form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.player-input input {
+  background-color: $third-color;
+  width: 100%;
+  height: 3rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: solid 2px $secondary-color;
+  color: $secondary-color;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.player-input button:hover {
+  background-color: $third-color !important;
+  color: $secondary-color !important;
+  border: solid 2px $secondary-color !important;
+  font-size: 1.2rem;
+}
+.player-input button,
+.player-input button:active,
+.player-input button:target,
+.player-input button:focus,
+.player-input button:focus-visible {
+  background-color: $secondary-color !important;
+  border: solid 2px $secondary-color !important;
+  font-size: 1.2rem;
+  color: $primary-color !important;
+  border-radius: 25px;
+}
